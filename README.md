@@ -18,7 +18,8 @@ Project Spectre is not merely a tool; it is a complete weapon system designed fo
 
 The framework features a real-time, reactive web interface built with React, capable of managing multiple implants simultaneously via a secure WebSocket channel. The following demonstration showcases the system's core capabilities: live agent connection, deep system reconnaissance (`sysinfo`), and instant surveillance (`screenshot`).
 
-![Ghost C2 Operational Demo](spectre-demo.gif)
+![Ghost C2 Operational Demo](<img width="1920" height="1034" alt="{3A7A61B1-AC37-44FE-926C-A23519D1B9CB}" src="https://github.com/user-attachments/assets/06357ff9-1aca-46be-81d9-94afd21a61c2" />
+)
 
 *This demo highlights the framework's ability to establish a covert channel, fingerprint the target system's hardware and security posture, and execute surveillance commands in real-time.*
 
@@ -59,7 +60,8 @@ Project Spectre, sadece bir araç değil; yetkilendirilmiş **Red Team operasyon
 
 Sistem, güvenli bir WebSocket kanalı üzerinden birden fazla implantı (ajan) eş zamanlı olarak yönetebilen, React ile inşa edilmiş gerçek zamanlı ve reaktif bir web arayüzüne sahiptir. Aşağıdaki gösterim, sistemin temel yeteneklerini sergilemektedir: canlı ajan bağlantısı, `sysinfo` ile derinlemesine sistem keşfi ve `screenshot` ile anlık gözetim.
 
-![Ghost C2 Operasyonel Demosu](spectre-demo.gif)
+![Ghost C2 Operasyonel Demosu](<img width="1920" height="1030" alt="{700AB6A9-0AFA-4CE9-9EDB-52B99563231A}" src="https://github.com/user-attachments/assets/3802bfe4-18e3-42bd-b1a4-ff5558be6c9f" />
+)
 
 *Bu demo, sistemin gizli bir kanal kurma, hedef sistemin donanımını ve güvenlik duruşunu parmak iziyle tanıma ve gözetim komutlarını gerçek zamanlı olarak yürütme yeteneğini vurgulamaktadır.*
 
