@@ -18,7 +18,7 @@ Project Spectre is not merely a tool; it is a complete weapon system designed fo
 
 The framework features a real-time, reactive web interface built with React, capable of managing multiple implants simultaneously via a secure WebSocket channel. The following demonstration showcases the system's core capabilities: live agent connection, deep system reconnaissance (`sysinfo`), and instant surveillance (`screenshot`).
 
-![Ghost C2 Operational Demo](<img width="1920" height="1034" alt="{3A7A61B1-AC37-44FE-926C-A23519D1B9CB}" src="https://github.com/user-attachments/assets/06357ff9-1aca-46be-81d9-94afd21a61c2" />
+![Ghost C2 Operational Demo](<a href="https://hizliresim.com/qn1n4i2"><img src="https://i.hizliresim.com/qn1n4i2.png" alt="ff"></a>
 )
 
 *This demo highlights the framework's ability to establish a covert channel, fingerprint the target system's hardware and security posture, and execute surveillance commands in real-time.*
