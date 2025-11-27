@@ -62,7 +62,7 @@ Project Spectre, sadece bir araç değil; yetkilendirilmiş **Red Team operasyon
 Sistem, güvenli bir WebSocket kanalı üzerinden birden fazla implantı (ajan) eş zamanlı olarak yönetebilen, React ile inşa edilmiş gerçek zamanlı ve reaktif bir web arayüzüne sahiptir. Aşağıdaki gösterim, sistemin temel yeteneklerini sergilemektedir: canlı ajan bağlantısı, `sysinfo` ile derinlemesine sistem keşfi ve `screenshot` ile anlık gözetim.
 
 ![Ghost C2 Operasyonel Demosu]
-<a href="https://hizliresim.com/1ok2656"><img src="https://i.hizliresim.com/qn1n4i2.png" alt="ff"></a>
+<a href="https://hizliresim.com/1ok2656"><img src="https://i.hizliresim.com/1ok2656.png" alt="ff"></a>
 
 *Bu demo, sistemin gizli bir kanal kurma, hedef sistemin donanımını ve güvenlik duruşunu parmak iziyle tanıma ve gözetim komutlarını gerçek zamanlı olarak yürütme yeteneğini vurgulamaktadır.*
 
