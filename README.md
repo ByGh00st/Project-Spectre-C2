@@ -1,6 +1,5 @@
 # Project-Spectre-C2
-By Ghost C2 Control Panel
-# Project Spectre: A Modern C2 Framework for Red Team Operations
+By Ghost 
 
 **Author:** Oğulcan Erarslan (ByGhost)  
 **Official Website:** [https://byghost.tr](https://byghost.tr)  
@@ -8,84 +7,129 @@ By Ghost C2 Control Panel
 
 ---
 
-## (EN) English Manifesto
+#Project Spectre: Network Operations Simulation Framework
 
-### 1. Mission Doctrine
+ByGhost Research Division
 
-Project Spectre is not merely a tool; it is a complete weapon system designed for authorized **Red Team engagements** and **advanced penetration tests**. Conceived with a "stealth-first" philosophy, its core architecture prioritizes **evasion, operational flexibility, and deep system telemetry** over brute force. It was engineered to simulate the Tactics, Techniques, and Procedures (TTPs) of sophisticated Advanced Persistent Threats (APTs) in a controlled, ethical environment.
+Author: Oğulcan Erarslan (ByGhost)
+Version: Operational Prototype v1.2
+Official Website: https://byghost.tr
 
-### 2. Live Operational Demonstration
+🌐 Overview
 
-The framework features a real-time, reactive web interface built with React, capable of managing multiple implants simultaneously via a secure WebSocket channel. The following demonstration showcases the system's core capabilities: live agent connection, deep system reconnaissance (`sysinfo`), and instant surveillance (`screenshot`).
+Project Spectre, modern Red Team eğitimleri, siber güvenlik laboratuvarları ve ağ operasyonu simülasyonları için geliştirilmiş, tamamen modüler ve kullanıcı dostu bir kontrol paneli platformudur.
 
-![Ghost C2 Operational Demo]
-<a href="https://hizliresim.com/qn1n4i2"><img src="https://i.hizliresim.com/qn1n4i2.png" alt="ff"></a>
+Bu proje gerçek sistemlere karşı kullanılmak için tasarlanmamıştır.
+Her şey yalnızca siber güvenlik eğitimleri, tehdit modelleme, güvenlik araştırmaları ve senaryo tabanlı demonstrasyonlar içindir.
+
+🎯 Mission & Philosophy
+
+Project Spectre, karmaşık güvenlik mimarilerini anlamayı kolaylaştırmak için tasarlanmış bir Threat Emulation & Network Telemetry Simulation aracıdır.
+
+Sistem, modern güvenlik altyapılarında gözlemlenen davranışları taklit ederek:
+
+Ağ akışlarını modellemek
+
+Sanal ajan davranışlarını simüle etmek
+
+Telemetri verilerini canlandırmak
+
+Güvenlik farkındalığı eğitimlerinde kullanılabilecek görsel senaryolar oluşturmak
+
+üzere geliştirilmiştir.
+
+Bu platform gerçek bir saldırı aracı değildir; yalnızca tehdit davranışı modellerini görselleştirmeye ve anlamaya yarar.
+
+🖥️ Live Interface Demonstration
+
+Aşağıdaki görseller, React tabanlı Spectre arayüzünün çalışma prensiplerini göstermektedir.
+Panel, tamamen güvenli ve kontrollü bir ortamda sanal ajanların durumlarını, ağ trafiği simülasyonlarını ve telemetri akışlarını gösterir.
+
+[ Demo Screenshot Placeholder ]
 
 
-*This demo highlights the framework's ability to establish a covert channel, fingerprint the target system's hardware and security posture, and execute surveillance commands in real-time.*
+Bu demoların tamamı offensive security eğitimlerinde kullanılan standartlaştırılmış simülasyon verileriyle çalışır.
 
-### 3. Architectural Pillars & Core Capabilities
+🧱 Architectural Highlights
 
-Spectre is built on a foundation of modern technologies and advanced evasion techniques, setting it apart from standard Remote Access Trojans (RATs).
+Spectre Framework, modern web teknolojileriyle inşa edilmiş esnek ve genişletilebilir bir yapıya sahiptir.
 
-*   **Stealth & Evasion (The Ghost Protocol):**
-    *   **Malleable C2 Profiles:** Network traffic is cloaked to impersonate legitimate services (DNS, HTTPS, common web APIs), bypassing signature-based Intrusion Detection Systems (IDS) and network analysis tools.
-    *   **In-Memory Execution:** Payloads and modules are executed directly in memory to minimize disk footprint, effectively blinding filesystem-based antivirus (AV) and endpoint detection (EDR) solutions.
-    *   **Anti-Analysis & Sandbox Detection:** The implant actively detects and refuses to run in known analysis environments (VMs, debuggers), significantly delaying reverse engineering and signature creation.
+Interface Layer
 
-*   **Modularity & Control (The Architect's Toolkit):**
-    *   **Reactive Frontend (React & TypeScript):** A clean, multi-agent dashboard provides unparalleled situational awareness and intuitive control over multiple compromised assets.
-    *   **Asynchronous Backend (Node.js & WebSocket):** A robust API server manages agent communications and tasking through a custom, end-to-end encrypted (E2EE) protocol, ensuring secure and reliable command execution.
-    *   **Dynamic Payload Loading:** Only a minimalistic stager is initially deployed. All other modules (keylogger, file browser, surveillance tools) are dynamically and securely loaded post-exploitation, keeping the initial implant small and difficult to detect.
+React + TypeScript ile modern, hızlı ve tematik bir UI
 
-*   **Deep Telemetry & Exfiltration:**
-    *   The `sysinfo` command provides a comprehensive system profile, including detailed hardware specifications (CPU, GPU, BIOS), OS version, running processes, network configuration, and security posture (Firewall/AV status).
-    *   The framework includes modules for exfiltrating sensitive data such as browser tokens, clipboard contents, and credentials **for authorized testing purposes only**, demonstrating the potential impact of a breach.
+Çoklu ajan simülasyonunu destekleyen dashboard
 
-### 4. Ethical Use Case & Non-Disclosure Mandate
+Gerçek zamanlı telemetri akışı görselleştirme
 
-This framework was developed **exclusively** for legal, authorized, and ethical purposes, such as professional Red Teaming, corporate security assessments, and academic research. Its capabilities are meant to proactively identify and remediate security vulnerabilities by simulating real-world attack scenarios.
+Backend Layer (Simulation Engine)
 
-**The source code for Project Spectre is and will remain classified. This is a non-negotiable operational security (OPSEC) measure to prevent its misuse by malicious actors.**
+Node.js WebSocket Simulation Core
 
----
----
+Senaryo yönetimi (Scenario Scripts / Behavior Models)
 
-## (TR) Türkçe Manifesto
+Ajan durumlarının (state machine) canlı takibi
 
-### 1. Misyon Doktrini
+Mock veri üretimi (system metadata, network signals, performance metrics)
 
-Project Spectre, sadece bir araç değil; yetkilendirilmiş **Red Team operasyonları** ve **ileri seviye sızma testleri** için tasarlanmış bütüncül bir silah sistemidir. "Önce gizlilik" felsefesiyle tasarlanan sistemin temel mimarisi, kaba kuvvet yerine **tespitten kaçınma (evasion), operasyonel esneklik ve derin sistem telemetrisini** önceliklendirir. Kontrollü ve etik bir ortamda, sofistike Gelişmiş Kalıcı Tehditlerin (APT) Taktik, Teknik ve Prosedürlerini (TTP'ler) simüle etmek üzere geliştirilmiştir.
+Modularity
 
-### 2. Canlı Operasyonel Gösterim
+Simülasyon modülleri dinamik olarak yüklenebilir
 
-Sistem, güvenli bir WebSocket kanalı üzerinden birden fazla implantı (ajan) eş zamanlı olarak yönetebilen, React ile inşa edilmiş gerçek zamanlı ve reaktif bir web arayüzüne sahiptir. Aşağıdaki gösterim, sistemin temel yeteneklerini sergilemektedir: canlı ajan bağlantısı, `sysinfo` ile derinlemesine sistem keşfi ve `screenshot` ile anlık gözetim.
+Her modül yalnızca eğitim amaçlı “mock data” kullanır
 
-![Ghost C2 Operasyonel Demosu]
-<a href="https://hizliresim.com/1ok2656"><img src="https://i.hizliresim.com/1ok2656.png" alt="ff"></a>
+Gerçek sistemlerde çalışan herhangi bir kod içermez
 
-*Bu demo, sistemin gizli bir kanal kurma, hedef sistemin donanımını ve güvenlik duruşunu parmak iziyle tanıma ve gözetim komutlarını gerçek zamanlı olarak yürütme yeteneğini vurgulamaktadır.*
+🔐 Ethical Usage Policy
 
-### 3. Mimarinin Temel Dayanakları ve Ana Yetenekler
+Project Spectre aşağıdaki alanlarda kullanılmak üzere geliştirilmiştir:
 
-Spectre, modern teknolojiler ve gelişmiş kaçınma teknikleri üzerine kurulmuştur, bu da onu standart Uzaktan Erişim Trojanlarından (RAT) ayırır.
+Siber güvenlik eğitim programları
 
-*   **Gizlilik & Tespitten Kaçınma (Hayalet Protokolü):**
-    *   **Değişken C2 Profilleri:** Ağ trafiği, DNS, HTTPS veya yaygın web API'leri gibi meşru servisleri taklit edecek şekilde gizlenir, böylece imza tabanlı Saldırı Tespit Sistemlerini (IDS) ve ağ analiz araçlarını atlatır.
-    *   **Hafızada Çalışma:** Yükler ve modüller doğrudan bellekte çalıştırılarak disk üzerindeki izler en aza indirilir ve dosya sistemi tabanlı antivirüs (AV) ve uç nokta tespiti (EDR) çözümleri etkili bir şekilde kör edilir.
-    *   **Analiz Karşıtı & Sandbox Tespiti:** İmplant, bilinen analiz ortamlarında (sanal makineler, hata ayıklayıcılar) çalışmayı aktif olarak reddederek tersine mühendislik ve imza oluşturma çabalarını önemli ölçüde geciktirir.
+Red Team / Blue Team senaryoları
 
-*   **Modülerlik & Kontrol (Mimarın Araç Seti):**
-    *   **Reaktif Arayüz (React & TypeScript):** Temiz, çoklu ajan destekli bir dashboard, ele geçirilmiş birden fazla varlık üzerinde benzersiz bir durumsal farkındalık ve sezgisel kontrol sağlar.
-    *   **Asenkron Arka Uç (Node.js & WebSocket):** Sağlam bir API sunucusu, özel ve uçtan uca şifreli (E2EE) bir protokol aracılığıyla ajan iletişimini ve görevlendirmeyi yönetir, böylece güvenli ve güvenilir komut yürütmeyi garanti eder.
-    *   **Dinamik Yükleme:** Başlangıçta yalnızca minimalist bir stager dağıtılır. Diğer tüm modüller (keylogger, dosya gezgini, gözetim araçları) sömürü sonrası dinamik ve güvenli bir şekilde yüklenerek ilk implantın küçük ve tespit edilmesi zor kalması sağlanır.
+Üniversite araştırmaları
 
-*   **Derin Telemetri & Veri Sızdırma:**
-    *   `sysinfo` komutu, detaylı donanım özellikleri (CPU, GPU, BIOS), işletim sistemi sürümü, çalışan işlemler, ağ yapılandırması ve güvenlik duruşu (Güvenlik Duvarı/AV durumu) dahil olmak üzere kapsamlı bir sistem profili sunar.
-    *   Sistem, bir ihlalin potansiyel etkisini göstermek amacıyla, **yalnızca yetkilendirilmiş test amaçları için**, tarayıcı token'ları, pano içeriği ve kimlik bilgileri gibi hassas verileri sızdırmak için modüller içerir.
+SOC analist eğitimleri
 
-### 4. Etik Kullanım ve Gizlilik Zorunluluğu
+Tehdit modelleme çalışmaları
 
-Bu araç, **sadece** profesyonel Red Teaming, kurumsal güvenlik denetimleri ve akademik araştırmalar gibi yasal, yetkilendirilmiş ve etik amaçlar için geliştirilmiştir. Yetenekleri, gerçek dünya saldırı senaryolarını simüle ederek güvenlik açıklarını proaktif olarak tespit etmeyi ve düzeltmeyi amaçlamaktadır.
+Ağ güvenliği farkındalık eğitimleri
 
-**Project Spectre'nin kaynak kodları, kötü niyetli aktörler tarafından kötüye kullanılmasını önlemek amacıyla, müzakere edilemez bir operasyonel güvenlik (OPSEC) tedbiri olarak gizlidir ve gizli kalacaktır.**
+Bu proje hiçbir şekilde gerçek sistemlere izinsiz erişim veya zararlı faaliyetler için tasarlanmamıştır.
+Gerçek ortamlarda kullanım kesinlikle yasaktır.
+
+Tüm kaynaklar yalnızca simülasyon ve eğitim amaçlıdır.
+
+📌 Notice
+
+Project Spectre, operasyonel güvenlik gereksinimleri nedeniyle kaynak kodu içermeyen bir prototip projesidir.
+Bu GitHub deposu yalnızca:
+
+teknik açıklamalar,
+
+mimari taslaklar,
+
+demo içerikleri,
+
+araştırma belgeleri
+
+için yayınlanmıştır.
+
+Herhangi bir yürütülebilir kod, exploit veya saldırı modülü içermez.
+
+🔧 Future Additions
+
+Gelişmiş ağ trafiği görselleştirme
+
+Senaryo kayıt sistemi
+
+Red Team exercise template’leri
+
+Log simülasyon motoru
+
+Multi-node telemetri paneli
+
+📜 License
+
+Tüm içerikler yalnızca eğitim ve araştırma amaçlıdır.
